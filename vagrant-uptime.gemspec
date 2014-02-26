@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Vagrant::Uptime::VERSION
   spec.authors       = ["monochromegane"]
   spec.email         = ["dev.kuro.obi@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Show Vagrant uptime.}
+  spec.description   = %q{Show Vagrant uptime.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
