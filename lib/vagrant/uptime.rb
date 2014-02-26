@@ -1,9 +1,7 @@
 require "vagrant/uptime/version"
+require "vagrant/uptime/plugin"
 
-module Vagrant
+module VagrantPlugins
   module Uptime
-    class Plugin < Vagrant.plugin("2")
-      name "Vagrant Uptime"
-    end
   end
 end
