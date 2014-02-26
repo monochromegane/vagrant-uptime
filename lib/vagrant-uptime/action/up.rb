@@ -7,9 +7,16 @@ module VagrantPlugins
         end
 
         def call(env)
-          puts "--> Called!"
+          up
           @app.call(env)
-          puts "<-- Called!"
+        end
+
+        protected
+
+        def up
+          uptimes = VagrantPlugins::Uptime.uptimes
+          uptimes << { up: Time.now }
+          VagrantPlugins::Uptime.uptimes = uptimes
         end
       end
     end
