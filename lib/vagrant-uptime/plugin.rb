@@ -9,6 +9,11 @@ module VagrantPlugins
         CostConfig
       end
 
+      command "uptime" do
+        require_relative "command/uptime"
+        Uptime
+      end
+
       action_hook("up", 'machine_action_up') do |hook|
         require_relative "action/up"
         hook.prepend(Action::Up)
